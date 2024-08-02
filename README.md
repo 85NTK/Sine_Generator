@@ -22,7 +22,10 @@ Design and simulation of fixed and variable frequency sine wave generators using
 |Dimensions ROM|10bit|Not use|
 |Resoluttion|16bit|16bit|
 |Phase Resoluttion| $0.3^o$ |Unlimited|
-|Fcw(Frequency accumulator
+|Fcw(Frequency accumulator|24bit|Not use|
+|Dimensions Accu|24bit|Not use|
+|Phase|0 $\to$ $360^o$|-π $\to$ π|
+
 ```verilog
 `timescale 1ns / 1ps
 module sine_dds_tb;
