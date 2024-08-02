@@ -90,7 +90,7 @@ endmodule
 ```
 ### Testbench
 The formula for the contact between fcw and the output sine frequency
-$fcw=(2^n×f_out)/f_(lấy mẫu)$ 
+$fcw=(2^n*f_(out))/f_(sampling)$
 ```verilog
 `timescale 1ns / 1ps
 module sine_dds_tb;
