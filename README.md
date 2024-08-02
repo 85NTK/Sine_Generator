@@ -27,66 +27,7 @@ Design and simulation of fixed and variable frequency sine wave generators using
 |Phase|0 $\to$ $360^o$|-π $\to$ π|
 ## Design based on LUT combined with DDS
 ### LUT
-- The direct look-up table (LUT) method is a simple algorithm, based on reading memorized sine patterns from a table. The memorized patterns represent the values of the sine function for N evenly spaced angles around the ring in the unit, in the range 0 - 360° (0 - 2π)
-![LUT](/FLOWCHART/LUT.png)
-- We can easily create a look-up table with the [online sine generator tool](https://www.daycounter.com/Calculators/Sine-Generator-Calculator.phtml) and then paste the values into a .mem file
-![Sine_LUT_generate_online](/FLOWCHART/Sine_LUT_generate_online.png)
-![sine_mem](/FLOWCHART/sine_mem.png)
-### DDS
-The Direct Digital Synthesizer (DDS) technique is a method of generating sine waves based on the principle of:
-- Phase Accumulation: based on the desired frequency, a phase value is continously accumulated over time
-- Look-up table sampling: the cumulative phase value is used as an index for a predetermined sine value look-up table (usually stored in ROM memory)
-### Flowchart
-```verilog
-module sine_dds(
-    input clk ,
-    input reset,
-    input [23:0] fcw,
-    output [15:0] dds_sin
-    );
-    
-    reg [15:0] rom_memory [1023:0];
-        
-    initial begin
-        $readmemh("sine.mem", rom_memory);
-    end
-        
-    reg [23:0] accu;
-    reg [1:0] fdiv_cnt;
-    wire accu_en;
-    wire [9:0] lut_index;
-              
-    //process for frequency divider
-    always@( posedge clk)
-        begin
-            if(reset == 1'b1)
-                fdiv_cnt <= 0; //synchronous reset
-            else if(accu_en == 1'b1)
-                fdiv_cnt <= 0; 
-            else    
-                fdiv_cnt <= fdiv_cnt +1;    
-        end
-        
-    //logic for accu enable signal, resets also the frequency divider counter
-    assign accu_en = (fdiv_cnt == 2'd2) ? 1'b1 : 1'b0;
-        
-    //process for phase accumulator
-    always@(posedge clk)
-        begin
-            if(reset == 1'b1)         
-                accu <= 0; //synchronous reset
-            else if(accu_en == 1'b1)
-                accu <= accu + fcw;
-        end
-        
-    //10 msb's of the phase accumulator are used to index the sinewave lookup-table
-    assign lut_index = accu[23:14];
-            
-    //16-bit sine value from lookup table
-    assign dds_sin = rom_memory[lut_index];
-        
-endmodule
-```
+- The direct look-up table (LUT) method is a simple algorithm, based on reading memorized sine patterns from a table. The memorizedverilog
 `timescale 1ns / 1ps
 module sine_dds_tb;
 
