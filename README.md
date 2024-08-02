@@ -34,6 +34,9 @@ Design and simulation of fixed and variable frequency sine wave generators using
 ![Sine_LUT_generate_online](/FLOWCHART/Sine_LUT_generate_online.png)
 ![sine_mem](/FLOWCHART/sine_mem.png)
 ### DDS
+The Direct Digital Synthesizer (DDS) technique is a method of generating sine waves based on the principle of:
+- Phase Accumulation: based on the desired frequency, a phase value is continously accumulated over time
+- Look-up table sampling: the cumulative phase value is used as an index for a predetermined sine value look-up table (usually stored in ROM memory)
 ### Flowchart
 ![DDS_block](/FLOWCHART/DDS_block.png)
 ### RTL code
