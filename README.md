@@ -26,7 +26,12 @@ Design and simulation of fixed and variable frequency sine wave generators using
 |Fcw(Frequency accumulator|24bit|Not use|
 |Dimensions Accu|24bit|Not use|
 |Phase|0 $\to$ $360^o$|-π $\to$ π|
-
+## Design based on LUT combined with DDS
+### LUT
+### DDS
+### Flowchart
+### RTL code
+### Testbench
 ```verilog
 `timescale 1ns / 1ps
 module sine_dds_tb;
