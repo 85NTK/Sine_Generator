@@ -137,3 +137,5 @@ module sine_dds_tb;
   
 endmodule
 ```
+### Schematic
+![DDS_schematic](/FLOWCHART/DDS_schematic.png)
