@@ -13,7 +13,6 @@ Design and simulation of fixed and variable frequency sine wave generators using
 - A sine signal is a type of analog signal signal that continously changes over time and has a sine modulated oscillation
 ![Sine](/FLOWCHART/Sine.jpg)
 - Mathemattical equations: u(t) = A * sin(2πft + θ)
-
 ## Design features
 |Parameters|LUT combined with DDS|CORDIC| 
 |-------------------|--------------|-------------|
@@ -91,6 +90,8 @@ module sine_dds(
 endmodule
 ```
 ### Testbench
+The formula for the contact between fcw and the output sine frequency:
+$fcw=(2^n*f_(out))/f_(sampling)$
 ```verilog
 `timescale 1ns / 1ps
 module sine_dds_tb;
