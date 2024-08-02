@@ -31,6 +31,8 @@ Design and simulation of fixed and variable frequency sine wave generators using
 - The direct look-up table (LUT) method is a simple algorithm, based on reading memorized sine patterns from a table. The memorized patterns represent the values of the sine function for N evenly spaced angles around the ring in the unit, in the range 0 - 360° (0 - 2π)
 ![LUT](/FLOWCHART/LUT.png)
 - We can easily create a look-up table with the [online sine generator tool](https://www.daycounter.com/Calculators/Sine-Generator-Calculator.phtml) and then paste the values into a .mem file
+![Sine_LUT_generate_online](/FLOWCHART/Sine_LUT_generate_online.png)
+![sine_mem](/FLOWCHART/sine_mem.png)
 ### DDS
 ### Flowchart
 ![DDS_block](/FLOWCHART/DDS_block.png)
