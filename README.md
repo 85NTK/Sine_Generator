@@ -140,7 +140,7 @@ endmodule
 ### Schematic
 ![DDS_schematic](/FLOWCHART/DDS_schematic.png)
 ### Simulation
-Sine wave with variable frequency
+- Sine wave with variable frequency
 ![DDS_sinewave](/VERIFICATION/DDS_sinewave.png)
-Sine wave with frequency 5MHz
+- Sine wave with frequency 5MHz
 ![DDS_sinewave5MHz](/VERIFICATION/DDS_sinewave5MHz.png)
