@@ -30,6 +30,7 @@ Design and simulation of fixed and variable frequency sine wave generators using
 ### LUT
 ### DDS
 ### Flowchart
+![DDS_block](/FLOWCHART/DDS_block.png)
 ### RTL code
 ```verilog
 module sine_dds(
