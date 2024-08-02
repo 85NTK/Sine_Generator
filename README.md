@@ -15,9 +15,9 @@ Design and simulation of fixed and variable frequency sine wave generators using
 ## Design features
 |Parameters|DDS Combinations LUTs|CORDIC| 
 |-------------------|--------------|-------------|
-|Frequency|      5MHz(variable)    |500kHz(fixed)|
-| Tần số xung clock | 500MHz       | 100MHz      | 
-| Biên độ           |              |             | 
+|Frequency|5MHz(variable)|500kHz(fixed)|
+|Clock Frequency|500MHz|100MHz| 
+|Amplitude|-32768$\to$32767|             | 
 | Kích thước ROM    |              |             |
 | Độ phân giải     |              |             |
 | Độ phân giải pha |              |             |
