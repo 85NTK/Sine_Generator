@@ -89,6 +89,8 @@ module sine_dds(
 endmodule
 ```
 ### Testbench
+The formula for the contact between fcw and the output sine frequency
+$fcw=(2^n×f_out)/f_(lấy mẫu)$ 
 ```verilog
 `timescale 1ns / 1ps
 module sine_dds_tb;
@@ -155,3 +157,14 @@ endmodule
 |Fcw(Frequency Control Word)|24bit|24bit|0%|
 |Dimensions Accu|24bit|24bit|0%|
 |Phase|0 $\to$ $360^o$|0 $\to$ $360^o$|0%|
+## Design based on CORDIC IP
+### CORDIC
+Coordinate Rotation Digital Computer (CORDIC), invented by J.E.Volder in 1959, is an algorithm that can be used to perform trigonometry-related calculations. The CORDIC algorithm is derived from tthe rotation of vectors according to Cartesian coordinates.
+### Flowchart
+![CORDIC_block](/FLOWCHART/CORDIC_block.png)
+### Schematic
+![CORDIC_schematic](/FLOWCHART/CORDIC_schematic.png)
+### Simulation
+![CORDIC_block](/FLOWCHART/CORDIC_block.png)
+
+
