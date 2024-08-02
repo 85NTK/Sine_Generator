@@ -23,6 +23,6 @@ Design and simulation of fixed and variable frequency sine wave generators using
 |Phase Resoluttion| $0.3^o$ |Unlimited|
 |Fcw(Frequency Control Word)|24bit|Not use|
 | Accu   |              |             |
-|Phase|0 $\to$ $360^o$|             |
+|Phase|0 $\to$ $360^o$|- $pi$ $\to$ $pi$|
 
 
