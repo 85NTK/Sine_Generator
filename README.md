@@ -3,4 +3,9 @@ Design and simulation of fixed and variable frequency sine wave generators using
 ---
 ***
 ## Problems posed
-
+- Specifications
+- Methodologys
+- Design
+- Simulation
+- Assess
+## Theoretical basis
