@@ -20,7 +20,7 @@ Design and simulation of fixed and variable frequency sine wave generators using
 |Amplitude|-32768 $\to$ 32767|-1 $\to$ 1| 
 |Kích thước ROM|10bit|Not use|
 |Resoluttion|16bit|16bit|
-|Phase Resoluttion| $ 0.3^o $ |             |
+|Phase Resoluttion| $0.3^o$ |             |
 | Fcw              |              |             |
 | Kích thước Accu   |              |             |
 | Pha              |              |             |
