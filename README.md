@@ -29,8 +29,8 @@ The direct look-up table method (LUT) is a simple algorithm, based on reading me
 The Direct Digital Synthesizer technique (DDS) is a method of generating sine waves based on the principle of:
 - Phase Accumulation: based on the desired frequency, a phase value in continously accumulated over time
 - Sampling the look-up table: The cumulative phase value is used as an index for a predefined sine value look-up table (usually stored in ROM memory). We can easily create a value look-up table using an [online sine generator](https://www.daycounter.com/Calculators/Sine-Generator-Calculator.phtml) and then paste it into a .mem file
-![Sine_LUT_generate_online](/Sine_LUT_generate_online.png)
-![sine_mem](/sine_mem.png)
+![Sine_LUT_generate_online](/FLOWCHART/Sine_LUT_generate_online.png)
+![sine_mem](/FLOWCHART/sine_mem.png)
 ### Flowchart
 ![DDS_flowchart](/FLOWCHART/DDS_block.png)
 ### RTL Code
