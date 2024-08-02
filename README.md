@@ -17,7 +17,7 @@ Design and simulation of fixed and variable frequency sine wave generators using
 |-------------------|--------------|-------------|
 |Frequency|5MHz(variable)|500kHz(fixed)|
 |Clock Frequency|500MHz|100MHz| 
-|Amplitude|-32768$\to$32767|             | 
+|Amplitude|-32768 $\to$ 32767|             | 
 | Kích thước ROM    |              |             |
 | Độ phân giải     |              |             |
 | Độ phân giải pha |              |             |
