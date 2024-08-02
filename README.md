@@ -13,9 +13,9 @@ Design and simulation of fixed and variable frequency sine wave generators using
 - A sine signal is a type of analog signal signal that continously changes over time and has a sine modulated oscillation
 - Mathemattical equations: u(t) = A * sin(2πft + θ)
 ## Design features
-|Parameters| LUT và DDS   | CORDIC     | 
+|Parameters|DDS Combinations LUTs|CORDIC| 
 |-------------------|--------------|-------------|
-| Tần số            | 5MHz         | 500kHz      |
+|Frequency|5MHz(variable)|500kHz(fixed)|
 | Tần số xung clock | 500MHz       | 100MHz      | 
 | Biên độ           |              |             | 
 | Kích thước ROM    |              |             |
