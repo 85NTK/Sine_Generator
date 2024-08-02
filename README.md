@@ -25,6 +25,7 @@ Design and simulation of fixed and variable frequency sine wave generators using
 |Dimensions Accu|24bit|Not use|
 |Phase|0 $\to$ $360^o$|-π $\to$ π|
 ## Design based on LUT combined with DDS
+Phương pháp tra cứu bảng trực tiếp (LUT) là một thuật toán đơn giản, dựa trên việc đọc các mẫu hình sin đã được ghi nhớ từ một bảng. Các mẫu được ghi nhớ biểu thị các giá trị của hàm hình sin cho N góc cách đều nhau quanh vòng trong đơn vị, trong phạm vi 0 - 360° (0 - 2π)
 ### Flowchart
 ![DDS_flowchart](/FLOWCHART/DDS_block.png)
 
