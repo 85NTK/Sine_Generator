@@ -25,5 +25,6 @@ Design and simulation of fixed and variable frequency sine wave generators using
 |Dimensions Accu|24bit|Not use|
 |Phase|0 $\to$ $360^o$|-π $\to$ π|
 ## Design based on LUT combined with DDS
-
+### Flowchart
+![](/FLOWCHART/counter_Block.png)
 
