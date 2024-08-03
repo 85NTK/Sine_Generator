@@ -90,10 +90,10 @@ module sine_dds(
 endmodule
 ```
 ### Testbench
-- The formula for the contact between fcw and the output sine frequency: $fcw=(2^n*f_(out))/f_(sampling)$ with n is the nuumber of bits of the phase accumulator
+- The formula for the contact between fcw and the output sine frequency: $fcw=(2^n*f_{out})/f_{sampling}$ with n is the nuumber of bits of the phase accumulator
 - The module is designed to sample every 3 clock cycles. With clock frequency equal to 500MHz and a required output frequency of 5 MHz $\to$ $fcw = 24'b0000 0111 1010 1110 0001 0100$
-- The maximum frequency that a module can produce follows Nyquist's theorem: $f_(out_max)≤f_(sampling)/2⇒f_(max)=83,3MHz$
-- The minimum frequency that the module produces is based on the smallest boost of fcw: $f_(min)=(fcw*f_(sampling))/2^n =(1*500MHz/3)/2^24 =9,93Hz$
+- The maximum frequency that a module can produce follows Nyquist's theorem: $f_{out_max}≤f_{sampling}/2⇒f_{out_max}=83,3MHz$
+- The minimum frequency that the module produces is based on the smallest boost of fcw: $f_{min}=(fcw*f_{sampling})/2^n =(1*500MHz/3)/2^24 =9,93Hz$
 ```verilog
 `timescale 1ns / 1ps
 module sine_dds_tb;
