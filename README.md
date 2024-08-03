@@ -75,32 +75,6 @@ module sine_dds_tb;
   
 endmodule
 ```
-### Schematic
-![DDS_schematic](/FLOWCHART/DDS_schematic.png)
-### Simulation
-#### Sine wave with variable frequency
-![DDS_sinewave](/VERIFICATION/DDS_sinewave.png)
-#### Sine wave with frequency 5MHz
-![DDS_sinewave5MHz](/VERIFICATION/DDS_sinewave5MHz.png)
-### Result
-|Parameters|Specifications|Simulation|Deviation|
-|----------|--------------|----------|---------|
-|Frequency|5MHz(variable)|4.9MHz(variable)|2%|
-|Amplitude|-32768 $\to$ 32767|-32768 $\to$ 36779|0.03%| 
-|Dimensions ROM|10bit|10bit|0%|
-|Resoluttion|16bit|16bit|0%|
-|Phase Resoluttion| $0.3^o$ |$0.3^o$|0%|
-|Fcw(Frequency Control Word)|24bit|24bit|0%|
-|Dimensions Accu|24bit|24bit|0%|
-|Phase|0 $\to$ $360^o$|0 $\to$ $360^o$|0%|
-## Design based on CORDIC IP
-### CORDIC
-Coordinate Rotation Digital Computer (CORDIC), invented by J.E.Volder in 1959, is an algorithm that can be used to perform trigonometry-related calculations. The CORDIC algorithm is derived from tthe rotation of vectors according to Cartesian coordinates.
-### Flowchart
-![CORDIC_block](/FLOWCHART/CORDIC_block.png)
-### Schematic
-![CORDIC_schematic](/FLOWCHART/CORDIC_schematic.png)
-### Simulation
-![CORDIC_block](/FLOWCHART/CORDIC_block.png)
+
 
 
