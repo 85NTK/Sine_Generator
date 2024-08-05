@@ -303,3 +303,5 @@ endmodule
 - Resource reduction: use optimization techniques to minimize the amount of hardware resources required for the design
 - Speed increase: algorithm optimization and Verilog code to improve sine wave generation speed
 - Reduce power consumption: use energy-saving design techniques to reduce the power consumption of the sine wave generator
+---
+***
